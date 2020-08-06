@@ -2,7 +2,14 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/peticionesAjax">Resource</router-link> |
+      <router-link to="/props">Tipos Props</router-link> |
+      <router-link to="/mapstate">Mapstate</router-link> |
+      <router-link to="/getters">Getters</router-link> |
+      <router-link to="/mutation">Mutation</router-link> |
+      <router-link to="/action">Action</router-link> |
+       <router-link to="/directivesHooks">Directives Hooks</router-link> |
+       <router-link to="/firebase">Firebase</router-link> |
     </div>
     <router-view/>
   </div>

@@ -11,13 +11,45 @@ const routes = [
     component: Home
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
+    path: '/peticionesAjax',
+    name: 'PeticionesAjax',
+    component: () => import(/* webpackChunkName: "peticionesAjax" */ '../views/PeticionesAjax.vue')
+  },
+  {
+    path: '/Props',
+    name: 'props',
+    component: () => import(/* webpackChunkName: "Props" */ '../views/Props.vue')
+  },
+  {
+    path: '/MapState',
+    name: 'mapState',
+    component: () => import(/* webpackChunkName: "MapState" */ '../views/MapState.vue')
+  },
+  {
+    path: '/Getters',
+    name: 'getters',
+    component: () => import(/* webpackChunkName: "Getters" */ '../views/Getters.vue')
+  },
+  {
+    path: '/Mutation',
+    name: 'mutation',
+    component: () => import(/* webpackChunkName: "Mutation" */ '../views/Mutation.vue')
+  },
+  {
+    path: '/Action',
+    name: 'action',
+    component: () => import(/* webpackChunkName: "Action" */ '../views/Action.vue')
+  },
+  {
+    path: '/DirectivesHooks',
+    name: 'directivesHooks',
+    component: () => import(/* webpackChunkName: "DirectivesHooks" */ '../views/DirectivesHooks.vue')
+  },
+  {
+    path: '/Firebase',
+    name: 'firebase',
+    component: () => import(/* webpackChunkName: "firebase" */ '../views/Firebase.vue')
+  },
 ]
 
 const router = new VueRouter({
